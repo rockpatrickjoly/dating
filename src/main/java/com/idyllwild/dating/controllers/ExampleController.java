@@ -14,7 +14,7 @@ public class ExampleController {
         this.repository = repository;
     }
 
-    @GetMapping("/examples")
+    @GetMapping("/api/examples")
     public List<Example> getExamples() {
         System.out.println("Getting all examples");
         List<Example> all = repository.findAll();
